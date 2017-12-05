@@ -57,9 +57,26 @@ void doWhileWhoop() {
     } while (i < 12);
 }
 
+void countDownToZero(int input) {
+    int i = input;
+    while (i >= 0  ) {
+        if (i == 0) {
+            printf("i = %d terminate the program\n", i);
+            break;
+        }
+        
+        printf("i equals = %d, we're not there yet, reduce by 3! \n", i);
+        if ((i % 5) == 0) {
+            printf("found one, %d is divisible by 5!\n", i);
+        }
+        i -= 3;
+        
+    }
+}
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     printf("Hello, World!\n");
-    doWhileWhoop();
+    countDownToZero(99);
     return 0;
 }
