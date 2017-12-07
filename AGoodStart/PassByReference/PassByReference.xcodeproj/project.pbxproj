@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E72D9CA51FD66416001B8D4F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E72D9CA41FD66416001B8D4F /* main.c */; };
-		E72D9CAD1FD70D8E001B8D4F /* libreadline.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E72D9CAC1FD70D8E001B8D4F /* libreadline.tbd */; };
+		E72D9CCE1FD89C6F001B8D4F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E72D9CCD1FD89C6F001B8D4F /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E72D9C9F1FD66416001B8D4F /* CopyFiles */ = {
+		E72D9CC81FD89C6F001B8D4F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,121 +23,110 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E72D9CA11FD66416001B8D4F /* Coolness */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Coolness; sourceTree = BUILT_PRODUCTS_DIR; };
-		E72D9CA41FD66416001B8D4F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		E72D9CAC1FD70D8E001B8D4F /* libreadline.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libreadline.tbd; path = usr/lib/libreadline.tbd; sourceTree = SDKROOT; };
+		E72D9CCA1FD89C6F001B8D4F /* PassByReference */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PassByReference; sourceTree = BUILT_PRODUCTS_DIR; };
+		E72D9CCD1FD89C6F001B8D4F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E72D9C9E1FD66416001B8D4F /* Frameworks */ = {
+		E72D9CC71FD89C6F001B8D4F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E72D9CAD1FD70D8E001B8D4F /* libreadline.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E72D9C981FD66416001B8D4F = {
+		E72D9CC11FD89C6F001B8D4F = {
 			isa = PBXGroup;
 			children = (
-				E72D9CA31FD66416001B8D4F /* Coolness */,
-				E72D9CA21FD66416001B8D4F /* Products */,
-				E72D9CAB1FD70D8D001B8D4F /* Frameworks */,
+				E72D9CCC1FD89C6F001B8D4F /* PassByReference */,
+				E72D9CCB1FD89C6F001B8D4F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E72D9CA21FD66416001B8D4F /* Products */ = {
+		E72D9CCB1FD89C6F001B8D4F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E72D9CA11FD66416001B8D4F /* Coolness */,
+				E72D9CCA1FD89C6F001B8D4F /* PassByReference */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E72D9CA31FD66416001B8D4F /* Coolness */ = {
+		E72D9CCC1FD89C6F001B8D4F /* PassByReference */ = {
 			isa = PBXGroup;
 			children = (
-				E72D9CA41FD66416001B8D4F /* main.c */,
+				E72D9CCD1FD89C6F001B8D4F /* main.c */,
 			);
-			path = Coolness;
-			sourceTree = "<group>";
-		};
-		E72D9CAB1FD70D8D001B8D4F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E72D9CAC1FD70D8E001B8D4F /* libreadline.tbd */,
-			);
-			name = Frameworks;
+			path = PassByReference;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E72D9CA01FD66416001B8D4F /* Coolness */ = {
+		E72D9CC91FD89C6F001B8D4F /* PassByReference */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E72D9CA81FD66416001B8D4F /* Build configuration list for PBXNativeTarget "Coolness" */;
+			buildConfigurationList = E72D9CD11FD89C6F001B8D4F /* Build configuration list for PBXNativeTarget "PassByReference" */;
 			buildPhases = (
-				E72D9C9D1FD66416001B8D4F /* Sources */,
-				E72D9C9E1FD66416001B8D4F /* Frameworks */,
-				E72D9C9F1FD66416001B8D4F /* CopyFiles */,
+				E72D9CC61FD89C6F001B8D4F /* Sources */,
+				E72D9CC71FD89C6F001B8D4F /* Frameworks */,
+				E72D9CC81FD89C6F001B8D4F /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Coolness;
-			productName = Coolness;
-			productReference = E72D9CA11FD66416001B8D4F /* Coolness */;
+			name = PassByReference;
+			productName = PassByReference;
+			productReference = E72D9CCA1FD89C6F001B8D4F /* PassByReference */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E72D9C991FD66416001B8D4F /* Project object */ = {
+		E72D9CC21FD89C6F001B8D4F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = moeCodes;
 				TargetAttributes = {
-					E72D9CA01FD66416001B8D4F = {
+					E72D9CC91FD89C6F001B8D4F = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = E72D9C9C1FD66416001B8D4F /* Build configuration list for PBXProject "Coolness" */;
+			buildConfigurationList = E72D9CC51FD89C6F001B8D4F /* Build configuration list for PBXProject "PassByReference" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = E72D9C981FD66416001B8D4F;
-			productRefGroup = E72D9CA21FD66416001B8D4F /* Products */;
+			mainGroup = E72D9CC11FD89C6F001B8D4F;
+			productRefGroup = E72D9CCB1FD89C6F001B8D4F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E72D9CA01FD66416001B8D4F /* Coolness */,
+				E72D9CC91FD89C6F001B8D4F /* PassByReference */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E72D9C9D1FD66416001B8D4F /* Sources */ = {
+		E72D9CC61FD89C6F001B8D4F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E72D9CA51FD66416001B8D4F /* main.c in Sources */,
+				E72D9CCE1FD89C6F001B8D4F /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		E72D9CA61FD66416001B8D4F /* Debug */ = {
+		E72D9CCF1FD89C6F001B8D4F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -193,7 +181,7 @@
 			};
 			name = Debug;
 		};
-		E72D9CA71FD66416001B8D4F /* Release */ = {
+		E72D9CD01FD89C6F001B8D4F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -241,7 +229,7 @@
 			};
 			name = Release;
 		};
-		E72D9CA91FD66416001B8D4F /* Debug */ = {
+		E72D9CD21FD89C6F001B8D4F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -249,7 +237,7 @@
 			};
 			name = Debug;
 		};
-		E72D9CAA1FD66416001B8D4F /* Release */ = {
+		E72D9CD31FD89C6F001B8D4F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -260,25 +248,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E72D9C9C1FD66416001B8D4F /* Build configuration list for PBXProject "Coolness" */ = {
+		E72D9CC51FD89C6F001B8D4F /* Build configuration list for PBXProject "PassByReference" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E72D9CA61FD66416001B8D4F /* Debug */,
-				E72D9CA71FD66416001B8D4F /* Release */,
+				E72D9CCF1FD89C6F001B8D4F /* Debug */,
+				E72D9CD01FD89C6F001B8D4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E72D9CA81FD66416001B8D4F /* Build configuration list for PBXNativeTarget "Coolness" */ = {
+		E72D9CD11FD89C6F001B8D4F /* Build configuration list for PBXNativeTarget "PassByReference" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E72D9CA91FD66416001B8D4F /* Debug */,
-				E72D9CAA1FD66416001B8D4F /* Release */,
+				E72D9CD21FD89C6F001B8D4F /* Debug */,
+				E72D9CD31FD89C6F001B8D4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E72D9C991FD66416001B8D4F /* Project object */;
+	rootObject = E72D9CC21FD89C6F001B8D4F /* Project object */;
 }

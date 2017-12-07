@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E72D9CA51FD66416001B8D4F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E72D9CA41FD66416001B8D4F /* main.c */; };
-		E72D9CAD1FD70D8E001B8D4F /* libreadline.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E72D9CAC1FD70D8E001B8D4F /* libreadline.tbd */; };
+		E762F78E1FD97AA80017147E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E762F78D1FD97AA80017147E /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E72D9C9F1FD66416001B8D4F /* CopyFiles */ = {
+		E762F7881FD97AA80017147E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,121 +23,110 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E72D9CA11FD66416001B8D4F /* Coolness */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Coolness; sourceTree = BUILT_PRODUCTS_DIR; };
-		E72D9CA41FD66416001B8D4F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		E72D9CAC1FD70D8E001B8D4F /* libreadline.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libreadline.tbd; path = usr/lib/libreadline.tbd; sourceTree = SDKROOT; };
+		E762F78A1FD97AA80017147E /* BMICalc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BMICalc; sourceTree = BUILT_PRODUCTS_DIR; };
+		E762F78D1FD97AA80017147E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E72D9C9E1FD66416001B8D4F /* Frameworks */ = {
+		E762F7871FD97AA80017147E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E72D9CAD1FD70D8E001B8D4F /* libreadline.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E72D9C981FD66416001B8D4F = {
+		E762F7811FD97AA80017147E = {
 			isa = PBXGroup;
 			children = (
-				E72D9CA31FD66416001B8D4F /* Coolness */,
-				E72D9CA21FD66416001B8D4F /* Products */,
-				E72D9CAB1FD70D8D001B8D4F /* Frameworks */,
+				E762F78C1FD97AA80017147E /* BMICalc */,
+				E762F78B1FD97AA80017147E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E72D9CA21FD66416001B8D4F /* Products */ = {
+		E762F78B1FD97AA80017147E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E72D9CA11FD66416001B8D4F /* Coolness */,
+				E762F78A1FD97AA80017147E /* BMICalc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E72D9CA31FD66416001B8D4F /* Coolness */ = {
+		E762F78C1FD97AA80017147E /* BMICalc */ = {
 			isa = PBXGroup;
 			children = (
-				E72D9CA41FD66416001B8D4F /* main.c */,
+				E762F78D1FD97AA80017147E /* main.c */,
 			);
-			path = Coolness;
-			sourceTree = "<group>";
-		};
-		E72D9CAB1FD70D8D001B8D4F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E72D9CAC1FD70D8E001B8D4F /* libreadline.tbd */,
-			);
-			name = Frameworks;
+			path = BMICalc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E72D9CA01FD66416001B8D4F /* Coolness */ = {
+		E762F7891FD97AA80017147E /* BMICalc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E72D9CA81FD66416001B8D4F /* Build configuration list for PBXNativeTarget "Coolness" */;
+			buildConfigurationList = E762F7911FD97AA80017147E /* Build configuration list for PBXNativeTarget "BMICalc" */;
 			buildPhases = (
-				E72D9C9D1FD66416001B8D4F /* Sources */,
-				E72D9C9E1FD66416001B8D4F /* Frameworks */,
-				E72D9C9F1FD66416001B8D4F /* CopyFiles */,
+				E762F7861FD97AA80017147E /* Sources */,
+				E762F7871FD97AA80017147E /* Frameworks */,
+				E762F7881FD97AA80017147E /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Coolness;
-			productName = Coolness;
-			productReference = E72D9CA11FD66416001B8D4F /* Coolness */;
+			name = BMICalc;
+			productName = BMICalc;
+			productReference = E762F78A1FD97AA80017147E /* BMICalc */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E72D9C991FD66416001B8D4F /* Project object */ = {
+		E762F7821FD97AA80017147E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = moeCodes;
 				TargetAttributes = {
-					E72D9CA01FD66416001B8D4F = {
+					E762F7891FD97AA80017147E = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = E72D9C9C1FD66416001B8D4F /* Build configuration list for PBXProject "Coolness" */;
+			buildConfigurationList = E762F7851FD97AA80017147E /* Build configuration list for PBXProject "BMICalc" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = E72D9C981FD66416001B8D4F;
-			productRefGroup = E72D9CA21FD66416001B8D4F /* Products */;
+			mainGroup = E762F7811FD97AA80017147E;
+			productRefGroup = E762F78B1FD97AA80017147E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E72D9CA01FD66416001B8D4F /* Coolness */,
+				E762F7891FD97AA80017147E /* BMICalc */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E72D9C9D1FD66416001B8D4F /* Sources */ = {
+		E762F7861FD97AA80017147E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E72D9CA51FD66416001B8D4F /* main.c in Sources */,
+				E762F78E1FD97AA80017147E /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		E72D9CA61FD66416001B8D4F /* Debug */ = {
+		E762F78F1FD97AA80017147E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -193,7 +181,7 @@
 			};
 			name = Debug;
 		};
-		E72D9CA71FD66416001B8D4F /* Release */ = {
+		E762F7901FD97AA80017147E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -241,7 +229,7 @@
 			};
 			name = Release;
 		};
-		E72D9CA91FD66416001B8D4F /* Debug */ = {
+		E762F7921FD97AA80017147E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -249,7 +237,7 @@
 			};
 			name = Debug;
 		};
-		E72D9CAA1FD66416001B8D4F /* Release */ = {
+		E762F7931FD97AA80017147E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -260,25 +248,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E72D9C9C1FD66416001B8D4F /* Build configuration list for PBXProject "Coolness" */ = {
+		E762F7851FD97AA80017147E /* Build configuration list for PBXProject "BMICalc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E72D9CA61FD66416001B8D4F /* Debug */,
-				E72D9CA71FD66416001B8D4F /* Release */,
+				E762F78F1FD97AA80017147E /* Debug */,
+				E762F7901FD97AA80017147E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E72D9CA81FD66416001B8D4F /* Build configuration list for PBXNativeTarget "Coolness" */ = {
+		E762F7911FD97AA80017147E /* Build configuration list for PBXNativeTarget "BMICalc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E72D9CA91FD66416001B8D4F /* Debug */,
-				E72D9CAA1FD66416001B8D4F /* Release */,
+				E762F7921FD97AA80017147E /* Debug */,
+				E762F7931FD97AA80017147E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E72D9C991FD66416001B8D4F /* Project object */;
+	rootObject = E762F7821FD97AA80017147E /* Project object */;
 }

@@ -7,6 +7,7 @@
 //
 
 #include <stdio.h>
+#include <readline/readline.h>
 
 void whileBeingCool(char *name) {
     int i = 0;
@@ -76,7 +77,11 @@ void countDownToZero(int input) {
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    printf("Hello, World!\n");
-    countDownToZero(99);
+    printf("where should i start counting?\n");
+    const char *number = readline(NULL);
+    int num = atoi(number);
+    countDownToZero(num);
+    
+    
     return 0;
 }
