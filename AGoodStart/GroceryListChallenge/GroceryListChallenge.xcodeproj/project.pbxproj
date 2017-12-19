@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		E7084F4E1FE0777100D2C3E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7084F4D1FE0777100D2C3E3 /* main.m */; };
 		E7084F561FE0BFE600D2C3E3 /* BNRPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = E7084F551FE0BFE600D2C3E3 /* BNRPerson.m */; };
+		E7189FEB1FE4311000C81821 /* BNREmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = E7189FEA1FE4311000C81821 /* BNREmployee.m */; };
+		E768E4ED1FE8C0B800BBD9F0 /* BNRAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = E768E4EC1FE8C0B800BBD9F0 /* BNRAsset.m */; };
+		E768E4F01FE954F300BBD9F0 /* BNRNote.m in Sources */ = {isa = PBXBuildFile; fileRef = E768E4EF1FE954F300BBD9F0 /* BNRNote.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +31,12 @@
 		E7084F4D1FE0777100D2C3E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E7084F541FE0BFE600D2C3E3 /* BNRPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRPerson.h; sourceTree = "<group>"; };
 		E7084F551FE0BFE600D2C3E3 /* BNRPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRPerson.m; sourceTree = "<group>"; };
+		E7189FE91FE4311000C81821 /* BNREmployee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNREmployee.h; sourceTree = "<group>"; };
+		E7189FEA1FE4311000C81821 /* BNREmployee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNREmployee.m; sourceTree = "<group>"; };
+		E768E4EB1FE8C0B800BBD9F0 /* BNRAsset.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRAsset.h; sourceTree = "<group>"; };
+		E768E4EC1FE8C0B800BBD9F0 /* BNRAsset.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRAsset.m; sourceTree = "<group>"; };
+		E768E4EE1FE954F300BBD9F0 /* BNRNote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRNote.h; sourceTree = "<group>"; };
+		E768E4EF1FE954F300BBD9F0 /* BNRNote.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRNote.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,12 @@
 				E7084F4D1FE0777100D2C3E3 /* main.m */,
 				E7084F541FE0BFE600D2C3E3 /* BNRPerson.h */,
 				E7084F551FE0BFE600D2C3E3 /* BNRPerson.m */,
+				E768E4EB1FE8C0B800BBD9F0 /* BNRAsset.h */,
+				E768E4EC1FE8C0B800BBD9F0 /* BNRAsset.m */,
+				E768E4EE1FE954F300BBD9F0 /* BNRNote.h */,
+				E768E4EF1FE954F300BBD9F0 /* BNRNote.m */,
+				E7189FE91FE4311000C81821 /* BNREmployee.h */,
+				E7189FEA1FE4311000C81821 /* BNREmployee.m */,
 			);
 			path = GroceryListChallenge;
 			sourceTree = "<group>";
@@ -124,8 +139,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7189FEB1FE4311000C81821 /* BNREmployee.m in Sources */,
+				E768E4F01FE954F300BBD9F0 /* BNRNote.m in Sources */,
 				E7084F4E1FE0777100D2C3E3 /* main.m in Sources */,
 				E7084F561FE0BFE600D2C3E3 /* BNRPerson.m in Sources */,
+				E768E4ED1FE8C0B800BBD9F0 /* BNRAsset.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

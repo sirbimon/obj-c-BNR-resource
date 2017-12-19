@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BNRPerson.h"
+#import "BNREmployee.h"
 
 void secondPart() {
     NSString *nameString = [NSString stringWithContentsOfFile:@"/usr/share/dict/propernames" encoding:NSUTF8StringEncoding error:NULL];
@@ -41,20 +41,39 @@ void firstPart() {
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        //create an instance of BNRPerson
-        BNRPerson *mikeyDay = [[BNRPerson alloc] init];
+        //create an instance of BNRPerson -> BNREmployee
+        BNREmployee *mikeyDay = [[BNREmployee alloc] init];
+        BNREmployee *john = [[BNREmployee alloc] init];
+        NSMutableArray *employees = [NSMutableArray array];
         
-        // give the instance variables interesting values using the setter
-        [mikeyDay setWeightInKilos:78];
-        [mikeyDay setHeightInMeters:1.8];
+        mikeyDay.weightInKilos = 78;
+        mikeyDay.heightInMeters = 1.8;
+        mikeyDay.employeeID = 12;
+        mikeyDay.hireDate = [NSDate dateWithNaturalLanguageString:@"Aug 2nd, 2001"];
+        mikeyDay.officeAlarmCode = 55555;
+        [employees addObject:mikeyDay];
         
-        //log the instance variables using getters
-        float height = [mikeyDay heightInMeters];
-        int weight = [mikeyDay weightInKilos];
+        
+        float height = mikeyDay.heightInMeters;
+        int weight = mikeyDay.weightInKilos;
+        
+        NSDate *date = [mikeyDay hireDate];
         NSLog(@"mikey is %.2f meters tall and weighs %d kilograms", height, weight);
+        NSLog(@"mikey aka %@ was hired on %@", mikeyDay, date);
         
-        float bmi = [mikeyDay bodyMassIndex];
-        NSLog(@"Mikey has a BMI of %f", bmi);
+        john.weightInKilos = 65;
+        john.heightInMeters = 1.6;
+        john.employeeID = 5;
+        john.hireDate = [NSDate dateWithNaturalLanguageString:@"Aug 2nd, 2002"];
+        john.officeAlarmCode = 9999;
+        [employees addObject:john];
+        
+        
+        
+        
+        
+
+        
     }
     return 0;
 }
