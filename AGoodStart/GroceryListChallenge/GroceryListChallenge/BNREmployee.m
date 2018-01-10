@@ -9,30 +9,56 @@
 #import "BNREmployee.h"
 #import "BNRAsset.h"
 
+//a class extension
+@interface BNREmployee ()
+{
+    //the purpose of hiding this is to hide mutability.
+    NSMutableSet *_assets;
+}
+@property (nonatomic) unsigned int officeAlarmCode;
+@end
+
 @implementation BNREmployee
+
+
 
 //because we declared an instance variable in the header, we need to create a getter and a setter for the _assets variable.
 
 - (void)setAssets:(NSArray *)a
 {
     _assets = [a mutableCopy];
-    //what's happening here is that we're sending a message to "a", an instance of NSArray, which in turn will give us back a mutable copy of "a". and set it to the instance variable of _assets.
+    //
+    
 }
 
 //now the setter has been declared, now it's time for the getter.
 
 - (NSArray *)assets {
-    return [_assets copy]; //this will return an NSArray from the NSMutableArray
+    return [_assets copy];
 }
 
 //cool, now we need to implement two more things, the addAsset.
-- (void)addAsset:(BNRAsset *)a {
-    //check if assets nil
+- (void)addAsset:(BNRAsset *)a
+{
     if (!_assets) {
-        //create the array if it's nil
-        _assets = [[NSMutableArray alloc] init];
-        //now we have the mutable array when we need it, that is when we already have an asset, and we'll
+        _assets = [[NSMutableSet alloc] init];
     }
+    [_assets addObject:a];
+    a.holder = self;
+}
+
+- (void)removeAsset:(BNRAsset *)a
+{
+    [_assets removeObject:a];
+}
+
+- (unsigned int)valueOfAsset {
+    //sum up the resale value of the assets.
+    unsigned int sum = 0;
+    for (BNRAsset *asset in _assets) {
+        sum += asset.resaleValue;
+    }
+    return sum;
 }
 
 - (double)yearsOfEmployment
@@ -57,8 +83,12 @@
 
 - (NSString *)description
 { //override of description
-    return [NSString stringWithFormat:@"<Employee %d>", self.employeeID];
-    
+    return [NSString stringWithFormat:@"<Employee %u: weight= %dkgs, height= %f, $%u in assets>", self.employeeID, self.weightInKilos, self.heightInMeters, self.valueOfAsset];
+}
+
+- (void)dealloc
+{
+    NSLog(@"deallocating %@", self);
 }
 
 @end

@@ -27,7 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E7084F4A1FE0777100D2C3E3 /* GroceryListChallenge */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GroceryListChallenge; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7084F4A1FE0777100D2C3E3 /* EmployeesAndAssets */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EmployeesAndAssets; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7084F4D1FE0777100D2C3E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E7084F541FE0BFE600D2C3E3 /* BNRPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRPerson.h; sourceTree = "<group>"; };
 		E7084F551FE0BFE600D2C3E3 /* BNRPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRPerson.m; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		E7084F4B1FE0777100D2C3E3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E7084F4A1FE0777100D2C3E3 /* GroceryListChallenge */,
+				E7084F4A1FE0777100D2C3E3 /* EmployeesAndAssets */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,9 +85,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E7084F491FE0777100D2C3E3 /* GroceryListChallenge */ = {
+		E7084F491FE0777100D2C3E3 /* EmployeesAndAssets */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E7084F511FE0777100D2C3E3 /* Build configuration list for PBXNativeTarget "GroceryListChallenge" */;
+			buildConfigurationList = E7084F511FE0777100D2C3E3 /* Build configuration list for PBXNativeTarget "EmployeesAndAssets" */;
 			buildPhases = (
 				E7084F461FE0777100D2C3E3 /* Sources */,
 				E7084F471FE0777100D2C3E3 /* Frameworks */,
@@ -97,9 +97,9 @@
 			);
 			dependencies = (
 			);
-			name = GroceryListChallenge;
+			name = EmployeesAndAssets;
 			productName = GroceryListChallenge;
-			productReference = E7084F4A1FE0777100D2C3E3 /* GroceryListChallenge */;
+			productReference = E7084F4A1FE0777100D2C3E3 /* EmployeesAndAssets */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -117,7 +117,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E7084F451FE0777100D2C3E3 /* Build configuration list for PBXProject "GroceryListChallenge" */;
+			buildConfigurationList = E7084F451FE0777100D2C3E3 /* Build configuration list for PBXProject "EmployeesAndAssets" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -129,7 +129,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E7084F491FE0777100D2C3E3 /* GroceryListChallenge */,
+				E7084F491FE0777100D2C3E3 /* EmployeesAndAssets */,
 			);
 		};
 /* End PBXProject section */
@@ -272,7 +272,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E7084F451FE0777100D2C3E3 /* Build configuration list for PBXProject "GroceryListChallenge" */ = {
+		E7084F451FE0777100D2C3E3 /* Build configuration list for PBXProject "EmployeesAndAssets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E7084F4F1FE0777100D2C3E3 /* Debug */,
@@ -281,7 +281,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E7084F511FE0777100D2C3E3 /* Build configuration list for PBXNativeTarget "GroceryListChallenge" */ = {
+		E7084F511FE0777100D2C3E3 /* Build configuration list for PBXNativeTarget "EmployeesAndAssets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E7084F521FE0777100D2C3E3 /* Debug */,

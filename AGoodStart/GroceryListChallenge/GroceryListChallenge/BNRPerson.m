@@ -8,6 +8,12 @@
 
 #import "BNRPerson.h"
 
+@interface BNRPerson ()
+
+@property (nonatomic) BOOL hasDriversLicense;
+
+@end
+
 @implementation BNRPerson
 
 //- (float)heightInMeters {

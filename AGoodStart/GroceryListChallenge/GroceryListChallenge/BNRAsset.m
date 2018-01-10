@@ -11,7 +11,12 @@
 @implementation BNRAsset
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"<%@: $%u", self.label, self.resaleValue];
+    //return [NSString stringWithFormat:@"<%@: $%u", self.label, self.resaleValue];
+    if (self.holder) {
+        return [NSString stringWithFormat:@"<%@: $%d, assigned to %@>", self.label, self.resaleValue, self.holder];
+    } else {
+        return [NSString stringWithFormat:@"<%@: $%d, unassigned>", self.label, self.resaleValue];
+    }
 }
 
 - (void)dealloc {
